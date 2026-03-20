@@ -1,10 +1,5 @@
-@"
-{
+﻿{
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
-"@ | Out-File -FilePath vercel.json -Encoding utf8
-
-git add vercel.json
-git commit -m "chore: add vercel rewrite config for SPA routing"
